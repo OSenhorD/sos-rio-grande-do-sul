@@ -1,5 +1,5 @@
 <section class="body">
-  <div class="card">
+  <div class="data">
     <div class="text-center">
       <button class="btn m-2" [class]="typeLocation == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
         (click)="typeLocation = 'mantimento'">
@@ -46,12 +46,12 @@
   </div>
 
   <div class="row gap-3 m-3 justify-content-center">
-    <button class="col-3 btn" [class]="typeForm == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
+    <button class="col-sm-3 btn" [class]="typeForm == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
       (click)="typeForm = 'mantimento'">
       Mantimentos
     </button>
 
-    <button class="col-3 btn" [class]="typeForm == 'abrigo' ? 'btn-primary' : 'btn-secondary'"
+    <button class="col-sm-3 btn" [class]="typeForm == 'abrigo' ? 'btn-primary' : 'btn-secondary'"
       (click)="typeForm = 'abrigo'">
       Abrigo
     </button>
@@ -60,21 +60,21 @@
   <form class="row g-3" [formGroup]="form">
     <p> {{ typeForm == "mantimento" ? 'Informar Mantimentos' : 'Informar Abrigo' }} </p>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="name" type="text" id="name" name="name" placeholder="Nome do local"
           required />
       </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="telephone" type="text" id="telephone" name="telephone"
           placeholder="Telefone" do local required />
       </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="local" type="text" id="local" name="local"
           placeholder="Endereço do local" required />
@@ -82,23 +82,23 @@
     </div>
 
     @if (typeForm == "mantimento") {
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="pix" type="text" id="pix" name="pix"
           placeholder="Pix para doação" />
       </div>
     </div>
     } @else {
-    <div class="col-12 m-0"></div>
+    <div class="col-sm-12 m-0"></div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="ocupado" type="text" id="ocupado" name="ocupado"
           placeholder="Vagas ocupadas" />
       </div>
     </div>
 
-    <div class="col-6">
+    <div class="col-sm-6">
       <div class="form-group">
         <input class="form-control" formControlName="livre" type="text" id="livre" name="livre"
           placeholder="Vagas livres" />
@@ -106,23 +106,23 @@
     </div>
     }
 
-    <div class="col-12">
+    <div class="col-sm-12">
       <div class="form-group">
         <textarea class="form-control" formControlName="message" id="message" name="message" placeholder="Mensagem..."
           rows="3"></textarea>
       </div>
     </div>
 
-    <div class="col-12">
+    <div class="col-sm-12">
       <button type="submit" id="yes" class="btn btn-primary" (click)="onSubmit()">Enviar Formulário</button>
     </div>
   </form>
 </section>
 
 <footer>
-  <div class="container">
+  <div class="container m-3">
     <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-12">
+      <div class="col-sm-5 col-xs-12">
         <div class="p-2">
           <p>
             Site para informar a respeito de locais de doação e abrigos com vagas disponíveis
@@ -138,10 +138,10 @@
         </div>
       </div>
 
-      <div class="col-md-2 col-sm-6 col-xs-12">
+      <div class="col-sm-4 col-xs-12">
       </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="col-sm-3 col-xs-12">
         <h4>Contate-nos</h4>
 
         <br />
