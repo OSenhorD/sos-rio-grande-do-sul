@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Fundação Caxias",
+    "local": "Rua Sarmento Leite, 2189 - Rio Branco Caxias do Sul",
+    "telefone": ["(54) 3223.0528", "(54) 9.9112.9890"],
+    "pix": ["atendimento@fundacaocaxias.com.br"],
+    "coordenadas": [-29.17497805759204, -51.18465361900528],
+    "itens": [
+      "Água Potável",
+      "Alimentos não perecíveis",
+      "Cobertores e Lençóis",
+      "Colchões",
+      "Materiais de Higiene e Limpeza",
+      "Sofás",
+      "Travesseiros"
+    ]
+  },
+  {
+    "name": "Seminário Diocesano Nossa Senhora Aparecida",
+    "local": "R. Ivo Remo Comanduli, 897 - Santa Catarina",
+    "telefone": ["(54) 3211.2750"],
+    "pix": ["atendimento@fundacaocaxias.com.br"],
+    "coordenadas": [-29.14613419813493, -51.20310367392957],
+    "itens": [
+      "Água Potável",
+      "Alimentos não perecíveis",
+      "Cobertores e Lençóis",
+      "Colchões",
+      "Materiais de Higiene e Limpeza",
+      "Sofás",
+      "Travesseiros"
+    ]
+  },
+  {
+    "name": "",
+    "local": "",
+    "telefone": [-30.036489395368644, -51.21722834544419],
+    "pix": [],
+    "coordenadas": []
+  },
+  {
+    "name": "",
+    "local": "",
+    "telefone": [],
+    "pix": [],
+    "coordenadas": []
+  },
+  {
+    "name": "",
+    "local": "",
+    "telefone": [],
+    "pix": [],
+    "coordenadas": []
+  }
+]
