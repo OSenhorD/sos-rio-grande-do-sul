@@ -1,5 +1,25 @@
 <section class="body">
   <div class="card">
+    <div class="text-center">
+      <button class="btn m-2" [class]="typeLocation == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
+        (click)="typeLocation = 'mantimento'">
+        Mantimento
+      </button>
+
+      <button class="btn m-2" [class]="typeLocation == 'abrigo' ? 'btn-primary' : 'btn-secondary'"
+        (click)="typeLocation = 'abrigo'">
+        Abrigo
+      </button>
+    </div>
+
+    <div class="items">
+      @for (abrigo of items; track $index) {
+      <div (click)="showInMap(abrigo)">
+        <p>{{ abrigo.name }}</p>
+        <p>{{ abrigo.local }}</p>
+      </div>
+      }
+    </div>
   </div>
 
   <app-map></app-map>
@@ -26,18 +46,19 @@
   </div>
 
   <div class="row gap-3 m-3 justify-content-center">
-    <button class="col-3 btn" [class]="type == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
-      (click)="type = 'mantimento'">
+    <button class="col-3 btn" [class]="typeForm == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
+      (click)="typeForm = 'mantimento'">
       Mantimentos
     </button>
 
-    <button class="col-3 btn" [class]="type == 'abrigo' ? 'btn-primary' : 'btn-secondary'" (click)="type = 'abrigo'">
+    <button class="col-3 btn" [class]="typeForm == 'abrigo' ? 'btn-primary' : 'btn-secondary'"
+      (click)="typeForm = 'abrigo'">
       Abrigo
     </button>
   </div>
 
   <form class="row g-3" [formGroup]="form">
-    <p> {{ type == "mantimento" ? 'Informar Mantimentos' : 'Informar Abrigo' }} </p>
+    <p> {{ typeForm == "mantimento" ? 'Informar Mantimentos' : 'Informar Abrigo' }} </p>
 
     <div class="col-6">
       <div class="form-group">
@@ -60,7 +81,7 @@
       </div>
     </div>
 
-    @if (type == "mantimento") {
+    @if (typeForm == "mantimento") {
     <div class="col-6">
       <div class="form-group">
         <input class="form-control" formControlName="pix" type="text" id="pix" name="pix"

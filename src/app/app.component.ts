@@ -1,5 +1,13 @@
-import { Component, inject } from "@angular/core"
+import {
+  Component,
+  inject,
+  OnInit,
+} from "@angular/core"
+
 import { FormBuilder, FormControl } from "@angular/forms"
+
+import { DataService, IAbrigo, IColeta } from "src/app/services/data.service"
+import { MarkerService } from "src/app/services/marker.service"
 
 @Component({
   selector: "app-root",
@@ -7,10 +15,16 @@ import { FormBuilder, FormControl } from "@angular/forms"
   styleUrl: "./app.component.scss",
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   private readonly _formBuilder: FormBuilder = inject(FormBuilder)
+  private readonly _dataService = inject(DataService)
+  private readonly _markerService = inject(MarkerService)
 
-  type: "mantimento" | "abrigo" = "mantimento"
+  typeLocation: "mantimento" | "abrigo" = "mantimento"
+  typeForm: "mantimento" | "abrigo" = "mantimento"
+
+  abrigos: IAbrigo[] = []
+  coletas: IColeta[] = []
 
   protected readonly form = this._formBuilder.group(
     {
@@ -23,6 +37,20 @@ export class AppComponent {
       message: new FormControl(""),
     },
   )
+
+  ngOnInit(): void {
+    this._dataService.inserirLocais()
+    this._dataService.abrigos.subscribe(items => this.abrigos = items)
+    this._dataService.coletas.subscribe(items => this.coletas = items)
+  }
+
+  get items(): IAbrigo[] | IColeta[] {
+    return this.typeLocation == "abrigo" ? this.abrigos : this.coletas
+  }
+
+  showInMap = (item: IAbrigo | IColeta) => {
+    this._markerService.moveMap(item.coordenadas[0], item.coordenadas[1])
+  }
 
   onSubmit = async () => {
     const url = "https://script.google.com/macros/s/AKfycbx0tQcled-WorNHa01YC-95DpfpxVnp2KxoweqPe3HVJjc08gBq9lZ50gGAKGasjd_O/exec"
