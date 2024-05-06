@@ -36,7 +36,7 @@ fi
 mv ./dist/$angular_name/browser/* ./dist
 rm -rf ./dist/$angular_name
 cd ./dist
-tar acf ../$projeto-frontend.tar .
+tar acf ../$projeto.tar .
 cd ..
 
 #
