@@ -1,8 +1,183 @@
 [
   {
-    "name": "",
-    "local": "",
-    "coordenadas": [],
+    "name": "COLEGIO GUAJUVIRAS",
+    "local": "Rua Andre Luiz dos Conceição, 577 - Guajuviras",
+    "coordenadas": [-29.902179363379517, -51.13464952972709],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CEL São José",
+    "local": "R. João Leivas de Carvalho, 541 - São José",
+    "coordenadas": [-29.882558067129104, -51.17456890538066],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CR BRASIL",
+    "local": "RUA CIDREIRA, 628 - ESTANCIA VELHA",
+    "coordenadas": [-29.917023085415597, -51.14402814507194],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CSSGAPA",
+    "local": "RUA TOBIAS BARRETO, 990 - NOSSA SENHORA DAS GRAÇAS",
+    "coordenadas": [-29.934919324518592, -51.15956476041642],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CTG BRAZAO DO RIO GRANDE",
+    "local": "RUA MENDES SÁ, 561 - NOSSA SENHORA DAS GRAÇAS",
+    "coordenadas": [-29.932772413656252, -51.16472856041672],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CTG SEIVA NATIVA",
+    "local": "RUA JOAO LEIVAS DE CARVALHO, 551 - SÃO JOSÉ",
+    "coordenadas": [-29.88303843238197, -51.174782589254335],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "EMEF ILDO",
+    "local": "R. Imbé, 25 - Estância Velha",
+    "coordenadas": [-29.920130697999355, -51.14545336041692],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "ESCOLA IRMAO PEDRO",
+    "local": "RUA DOUTOR OLAVO FERNANDES, 68 - ESTANCIA VELHA",
+    "coordenadas": [-29.92370439639016, -51.140964873908175],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "ESCOLA PERACCHI",
+    "local": "RUA ALBERTO RODRIGUES DE OLIVEIRA, 125 - OLARIA",
+    "coordenadas": [-29.92374760509201, -51.13054634507159],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "Escola Jacob Longoni",
+    "local": "R. Porto Seguro, 197 - Nossa Sra. das Gracas, Canoas",
+    "coordenadas": [-29.93268491579204, -51.15855654692554],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "FENIX",
+    "local": "RUA QUINZE DE JANEIRO, 481 - CENTRO",
+    "coordenadas": [-29.91772539064572, -51.179896418089896],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "IFRS CANOAS",
+    "local": "RUA DOUTORA MARIA ZELIA CARNEIRO DE FIGUEIREDO, 870 - IGARA",
+    "coordenadas": [-29.899663858684566, -51.15053404507233],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "IGREJA REDENÇAO NAZARIO",
+    "local": "AV. DO NAZARIO, 1104 - OLARIA",
+    "coordenadas": [-29.91895169270655, -51.1319452027446],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "MODULAR",
+    "local": "RUA SANTOS FERREIRA, 3500 - MAL RONDON",
+    "coordenadas": [-29.925770110690415, -51.14499696041697],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "PAROQUIA NOSSA SENHORA DO ROSÁRIO",
+    "local": "R. Duque de Caxias, 700 - Mal. Rondon",
+    "coordenadas": [-29.918353490765323, -51.17049287390806],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "RUA ITU, 672",
+    "local": "RUA ITU, 672 - IGARA",
+    "coordenadas": [-29.898414863769403, -51.169100518090126],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "ULBRA",
+    "local": "Rua Farroupilha, 8001 - São José, Canoas - RS",
+    "coordenadas": [-29.888833838475065, -51.15339134692694],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "SESI",
+    "local": "RUA AURORA, 1220 - MAL RONDON",
+    "coordenadas": [-29.910056978413138, -51.16956001808981],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "PAROQUIA SAO LUIS",
+    "local": "RUA CONEGO JOSÉ LEAO HARTMANN - CENTRO",
+    "coordenadas": [-29.895977550654454, -51.13509037390878],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "AMORJI",
+    "local": "RUA DAS AZALEIAS, 189 - IGARA",
+    "coordenadas": [-29.925705807306986, -51.14670430274449],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "ESCOLA RONDONIA",
+    "local": "AJ RENNER, 211 - ESTANCIA VELHA",
+    "coordenadas": [-29.925696508914044, -51.14670430274449],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "COLÉGIO ESPÍRITO SANTO",
+    "local": "R. Tamôio, 3393 - Nossa Sra. das Gracas",
+    "coordenadas": [-29.9303191097608, -51.16795734507163],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "CLUBE DOS EMPREGADOS DA PETROBRAS (CEPE)",
+    "local": "Av. Getúlio Vargas, 11001 - Refap Petrobras",
+    "coordenadas": [-29.869145860701444, -51.17851116811392],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "PARÓQUIA SANTA LUZIA",
+    "local": "AV SANTOS FERREIRA 3850 - ESTANCIA VELHA",
+    "coordenadas": [-29.924166629585017, -51.14147103420915],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "COLÉGIO MIGUEL LAMPERT",
+    "local": "R. João Leivas de Carvalho, 461 - São José",
+    "coordenadas": [-29.882496426652512, -51.17564337390924],
+    "ocupado": "",
+    "livre": ""
+  },
+  {
+    "name": "COLÉGIO MARIA AUXILIADORA",
+    "local": "AV. GUILHERME SCHELL, 5888 - CENTRO",
+    "coordenadas": [-29.917348366882532, -51.18318616506304],
     "ocupado": "",
     "livre": ""
   }
