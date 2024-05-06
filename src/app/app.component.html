@@ -1,1 +1,142 @@
-<app-map></app-map>
+<section class="body">
+  <div class="card">
+  </div>
+
+  <app-map></app-map>
+</section>
+
+<section class="section-form">
+  <p>
+    Para informar locais que estão recebendo mantimentos ou abrigos com vagas disponíveis,
+    entre em contato abaixo
+  </p>
+
+  <div class="success" id="form-success">
+    <p>
+      Formulário enviado com sucesso, em breve atualizaremos o mapa.
+    </p>
+  </div>
+
+  <div class="error" id="form-error">
+    <p>
+      Erro ao enviar o formulário, entre em conato pelo e-mail:
+      <br />
+      davidmarques1331&#64;gmail.com
+    </p>
+  </div>
+
+  <div class="row gap-3 m-3 justify-content-center">
+    <button class="col-3 btn" [class]="type == 'mantimento' ? 'btn-primary' : 'btn-secondary'"
+      (click)="type = 'mantimento'">
+      Mantimentos
+    </button>
+
+    <button class="col-3 btn" [class]="type == 'abrigo' ? 'btn-primary' : 'btn-secondary'" (click)="type = 'abrigo'">
+      Abrigo
+    </button>
+  </div>
+
+  <form class="row g-3" [formGroup]="form">
+    <p> {{ type == "mantimento" ? 'Informar Mantimentos' : 'Informar Abrigo' }} </p>
+
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="name" type="text" id="name" name="name" placeholder="Nome do local"
+          required />
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="telephone" type="text" id="telephone" name="telephone"
+          placeholder="Telefone" do local required />
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="local" type="text" id="local" name="local"
+          placeholder="Endereço do local" required />
+      </div>
+    </div>
+
+    @if (type == "mantimento") {
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="pix" type="text" id="pix" name="pix"
+          placeholder="Pix para doação" />
+      </div>
+    </div>
+    } @else {
+    <div class="col-12 m-0"></div>
+
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="ocupado" type="text" id="ocupado" name="ocupado"
+          placeholder="Vagas ocupadas" />
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="form-group">
+        <input class="form-control" formControlName="livre" type="text" id="livre" name="livre"
+          placeholder="Vagas livres" />
+      </div>
+    </div>
+    }
+
+    <div class="col-12">
+      <div class="form-group">
+        <textarea class="form-control" formControlName="message" id="message" name="message" placeholder="Mensagem..."
+          rows="3"></textarea>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" id="yes" class="btn btn-primary" (click)="onSubmit()">Enviar Formulário</button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="p-2">
+          <p>
+            Site para informar a respeito de locais de doação e abrigos com vagas disponíveis
+            de acordo com informações coletadas das redes sociais ou solicitadas via formulário.
+          </p>
+
+          <br />
+
+          <a href="#">
+            Dev? Pode contribuir se desejar.
+            <span class="fa fa-github"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-6 col-xs-12">
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <h4>Contate-nos</h4>
+
+        <br />
+
+        <div>
+          <p><i class="fa fa-envelope"></i> davidmarques1331&#64;gmail.com</p>
+
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5542999027693">
+            <p> <i class="fa fa-whatsapp"></i> (42) 9 9902 7693 </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <p>SOS Rio Grande do Sul</p>
+  </div>
+</footer>

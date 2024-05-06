@@ -4,6 +4,7 @@ import { BrowserModule } from "@angular/platform-browser"
 import { registerLocaleData } from "@angular/common"
 import { RouterModule, Routes } from "@angular/router"
 import localeBr from "@angular/common/locales/pt"
+import { ReactiveFormsModule } from "@angular/forms"
 import { AppComponent } from "src/app/app.component"
 import { MapComponent } from "src/app/map/map.component"
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes, {
       bindToComponentInputs: true,
