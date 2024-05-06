@@ -32,12 +32,13 @@ export class MarkerService {
   inserirLocais(map: L.Map): void {
     this._http.get(this._abrigos)
       .subscribe((items: any) => {
+        const icon = L.icon({ iconUrl: "assets/abrigo.png", iconSize: [40, 40] })
         items = (items as IColeta[]).filter(item => item.coordenadas.length > 0)
         for (const item of items) {
           item.telefone = Array.isArray(item.telefone) ? item.telefone : []
 
           L
-            .marker([item.coordenadas[0], item.coordenadas[1]])
+            .marker([item.coordenadas[0], item.coordenadas[1]], { icon })
             .addTo(map)
             .bindPopup(this.inserirPopupAbrigo(item))
         }
@@ -45,14 +46,16 @@ export class MarkerService {
 
     this._http.get(this._coletas)
       .subscribe((items: any) => {
+        const icon = L.icon({ iconUrl: "assets/coleta.png", iconSize: [40, 40] })
         items = (items as IColeta[]).filter(item => item.coordenadas.length > 0)
+
         for (const item of items) {
           item.pix = Array.isArray(item.pix) ? item.pix : []
           item.itens = Array.isArray(item.itens) ? item.itens : []
           item.telefone = Array.isArray(item.telefone) ? item.telefone : []
 
           L
-            .marker([item.coordenadas[0], item.coordenadas[1]])
+            .marker([item.coordenadas[0], item.coordenadas[1]], { icon })
             .addTo(map)
             .bindPopup(this.inserirPopupColeta(item))
         }
